@@ -4,7 +4,7 @@ double centerX =-0.5;
 double centerY =0.0;
 double zoom = 0.3;
 
-boolean redraw;
+boolean redraw = true;
 
 PVector topLeftNew = new PVector();
 PVector botRightNew = new PVector();
@@ -18,7 +18,7 @@ void setup()
   pixelDensity(1);
   size(512,512);
   
-  mandelFrame();
+  textAlign(LEFT,BOTTOM);
 }
 
 void draw()
@@ -34,6 +34,8 @@ void draw()
   {
     mandelFrame();
     redraw=false;
+    
+    text("mouseWheel Zoom/Drag Move", 0,height);
   }
 }
 
