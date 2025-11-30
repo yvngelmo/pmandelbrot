@@ -35,7 +35,7 @@ void draw()
     mandelFrame();
     redraw=false;
     
-    text("mouseWheel Zoom/Drag Move", 0,height);
+    text("MouseWheel to Zoom / MouseDrag to Move || Zoom: "+nf((float)zoom,0,1)+"x", 2,height-2);
   }
 }
 
